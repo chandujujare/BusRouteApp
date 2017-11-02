@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/routedetails_logo"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_default" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/routedetails_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/routedetails_accessible"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/routedetails_accessible"
+                android:layout_toStartOf="@+id/routedetails_accessible"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <ImageView
+
+                android:id="@+id/routedetails_accessible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/accessible" />
+
+            <TextView
+                android:id="@+id/routedetails_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/routedetails_name"
+                android:lines="3"
+                android:padding="@dimen/padding_5"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/routedetails_stopslist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:divider="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"></ListView>
+
+</LinearLayout>

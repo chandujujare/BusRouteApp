@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BusRouteApp</string>
+
+
+    <!--<URLs>-->
+
+    <string name="base_url">http://www.mocky.io/v2/</string>
+    <string name="route_data">ROUTE_DATA</string>
+    <string name="ok">OK</string>
+    <string name="dialog_msg">Unable to communicate to server. Please try again.</string>
+    <string name="network">No internet connection. Please check your network settings.</string>
+</resources>
